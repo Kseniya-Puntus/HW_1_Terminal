@@ -1,0 +1,54 @@
+GIT BASH
+
+1) Посмотреть где я === pwd
+2) Создать папку === mkdir 27
+3) Зайти в папку === cd 27
+4) Создать 3 папки === mkdir f_1 f_2 f_3
+5) Зайти в любоую папку === cd f_1
+6) Создать 5 файлов (3 txt, 2 json) === touch {file1.txt,file2.txt,file3.txt,file4.json,file5.json}
+7) Создать 3 папки === mkdir testdir1 testdir2 testdir3
+8) Вывести список содержимого папки === ls -la
+9) + Открыть любой txt файл === start file1.txt
+10) + написать туда что-нибудь, любой текст === vim file1.txt
+11) + сохранить и выйти === esc: wq
+12) Выйти из папки на уровень выше === cd ..
+13) Переместить любые 2 файла, которые вы создали, в любую другую папку === mv {file2.txt,file4.json} n_1
+14) Скопировать любые 2 файла, которые вы создали, в любую другую папку === cp {file3.txt,file5.json} n_2
+15) Найти файл по имени === find . -name "file3.txt"
+16) Просмотреть содержимое в реальном времени (команда grep) изучите как она работает ===  tail -f file1.txt
+17) Вывести несколько первых строк из текстового файла ===    head file1.txt
+18) Вывести несколько последних строк из текстового файла ===   tail file1.txt
+19) Просмотреть содержимое длинного файла (команда less) изучите как она работает === less file1.txt
+20) Вывести дату и время === date
+
+
+Задание *
+1) Отправить http запрос на сервер.
+=============================================================================
+curl "http://162.55.220.72:5005/get_method?name=(Kseniya)&age=(25)"
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100    21  100    21    0     0    365      0 --:--:-- --:--:-- --:--:--   368["(Kseniya)","(25)"]
+
+
+2) Написать скрипт который выполнит автоматически пункты 3, 4, 5, 6, 7, 8, 13
+=============================================================================
+./scr.txt
+total 9
+drwxr-xr-x 1 Lenovo 197121   0 Feb  9 12:44 .
+drwxr-xr-x 1 Lenovo 197121   0 Feb  9 12:44 ..
+-rw-r--r-- 1 Lenovo 197121   0 Feb  9 12:44 111.txt
+-rw-r--r-- 1 Lenovo 197121   0 Feb  9 12:44 222.txt
+-rw-r--r-- 1 Lenovo 197121   0 Feb  9 12:44 333.txt
+-rw-r--r-- 1 Lenovo 197121   0 Feb  9 12:44 444.json
+-rw-r--r-- 1 Lenovo 197121   0 Feb  9 12:44 555.json
+drwxr-xr-x 1 Lenovo 197121   0 Feb  9 12:44 folder1
+drwxr-xr-x 1 Lenovo 197121   0 Feb  9 12:44 folder2
+drwxr-xr-x 1 Lenovo 197121   0 Feb  9 12:44 folder3
+-rwxr-xr-x 1 Lenovo 197121 188 Feb  9 12:42 scr.txt
+drwxr-xr-x 1 Lenovo 197121   0 Feb  9 12:44 testdir1
+drwxr-xr-x 1 Lenovo 197121   0 Feb  9 12:44 testdir2
+drwxr-xr-x 1 Lenovo 197121   0 Feb  9 12:44 testdir3
+-rw-r--r-- 1 Lenovo 197121   0 Feb  9 00:59 tt1.txt
+-rw-r--r-- 1 Lenovo 197121   0 Feb  9 00:59 tt2.txt
+
